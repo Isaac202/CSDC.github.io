@@ -509,7 +509,6 @@ ul
 /* start newsletter */
 #newsletter
   {
-    background: url('../images/newsletter-bg.jpg') no-repeat center center;
     background-size: cover;
    background-attachment: fixed;
     color: #FFFFFF;
