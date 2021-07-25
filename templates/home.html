@@ -1,0 +1,61 @@
+﻿{% extends "base.html" %} 
+{% block content %}
+{% load static %}
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Second Conference on Statistics and Data Science - CSDS 2019</span></h2> 				
+				<!--
+				<br>
+				<center>
+				<div class="templatemo_homewrapper">
+					<a  class="smoothScroll btn btn-default wow fadeInDown" data-wow-delay="2000">
+					<h3><font color="#ff1a1a"><strong> The deadline for abstract submission has been postponed to September 25, 2019.</strong></font></h3></a>	
+				</div>
+				</center> 
+				<br>-->
+				<hr>
+				<h3> <font color="#28a7e9"><strong> {{titulo}} </strong> </font></h3>
+				<ul>
+				{% for list in home %}
+				<li> <a href="https://www.flickr.com/gp/186138274@N08/h9e20k" target="_black">{{list.links}}</a></li>
+				{% endfor %}
+				</ul>				
+				<hr>
+				<p> 	
+				<h3> <font color="#28a7e9"><strong> Salvador, 18-20 November, 2019 </strong> </font></h3>
+				The 2nd Conference on Statistics and Data Science (CSDS 2019) will be held in Salvador, Bahia, Brazil, 
+				from November 18-20, 2019. The organization of this meeting will be carried out in colaboration with the Department 
+				of Statistics at the Federal University of Bahia, Brazil. 
+				The purpose of the CSDS 2019 is to bring together researchers and practitioners, from the academy 
+				and from the industry, that develop and apply statistical and computational methods for data 
+				science. This conference will provide a forum to share and discuss ways to improve the 
+				access to knowledge, and promote interdisciplinary collaborations. 
+				The scientific program will be very appealing for most statisticians and data scientists 
+				interested in quantitative methods for decision making and will include plenary talks, 
+				invited sessions, short courses, round tables, contributed papers and contributed posters.
+				</p>
+				<br>
+					
+				<div class="row">
+				<div class="column">
+				<div class="videoWrapper">
+				   <iframe width=95% height="315" src="https://www.youtube.com/embed/UyMeV_C-5E4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				</div>
+				<div class="column">
+				<div class="videoWrapper">
+				   <iframe width=95% height="315" src="https://www.youtube.com/embed/1QO-JflGFMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <hr>
+	
+
+	{% endblock %}
